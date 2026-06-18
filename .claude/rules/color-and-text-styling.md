@@ -1,0 +1,134 @@
+# Color and Text Styling Guidelines
+
+## Color System Architecture
+- **Theme System**: All colors are defined in [themes.css](/src/styles/themes.css) with automatic light/dark mode switching
+- **Base Colors**: Raw color values are stored in [colors.css](/src/styles/colors.css) but should not be used directly
+- **Semantic Variables**: Always use theme-aware variables from [themes.css](/src/styles/themes.css) that automatically adapt to light/dark modes
+
+## Color Usage Rules
+- **Never use hardcoded color values** (like hex codes or rgb values) anywhere in the codebase
+- **Always use CSS variables** for consistent theming:
+  ```tsx
+  /* ✅ Correct - theme-aware variables */
+  <div className="text-[var(--text-primary)] bg-[var(--bg-secondary)] border-[var(--border-default)]">Content</div>
+
+  /* ❌ Incorrect - hardcoded values */
+  <div style={{
+    color: '#ffffff',
+    backgroundColor: '#353535',
+    borderColor: '#464646'
+  }}>Content</div>
+  ```
+
+## Core Theme Variables
+Use these primary variables from [themes.css](/src/styles/themes.css):
+
+### Text Colors
+```tsx
+/* Primary text hierarchy */
+<h1 className="text-[var(--text-primary)]">Main headings</h1>
+<p className="text-[var(--text-secondary)]">Supporting text</p>
+<span className="text-[var(--text-dimmed)]">Placeholder/disabled text</span>
+```
+
+### Background Colors
+```tsx
+/* Background hierarchy */
+<div className="bg-[var(--bg-primary)]">Main canvas</div>
+<div className="bg-[var(--bg-secondary)]">Panel backgrounds</div>
+<div className="bg-[var(--bg-tertiary)]">Section dividers</div>
+<div className="bg-[var(--bg-raised)]">Hover/active states</div>
+```
+
+### Action Colors
+```tsx
+/* Button and interactive elements */
+<button className="bg-[var(--action-primary-bg)] hover:bg-[var(--action-primary-bg-hover)]">Primary CTA</button>
+<button className="bg-[var(--action-secondary-bg)] hover:bg-[var(--action-secondary-bg-hover)]">Secondary</button>
+```
+
+### Input Colors
+```tsx
+/* Form elements */
+<input className="bg-[var(--input-bg)] border-[var(--input-border)] focus:border-[var(--input-border-focus)]" />
+```
+
+## Semantic Color Usage
+For colored elements, use semantic color variables:
+```tsx
+/* ✅ Correct - semantic variables */
+<span className="text-[var(--text-blue)]">Information text</span>
+<div className="bg-[var(--green-bg)] text-[var(--text-primary)]">Success state</div>
+<button className="bg-[var(--red-bg)] hover:bg-[var(--red-bg-hover)]">Destructive action</button>
+
+/* Available semantic colors: blue, green, red, orange, purple, pink, yellow */
+/* Each has: --{color}-bg, --{color}-bg-hover, --{color}-canvas, --text-{color}, --{color}-bg-transparent */
+```
+
+## Component-Specific Variables
+Use specialized variables for Spring UI components:
+```tsx
+/* Button components */
+<button className="bg-[var(--button-default-bg)]">Default button background</button>
+
+/* Segmented controls */
+<div className="bg-[var(--segmented-control-bg)] shadow-[var(--segmented-control-shadow)]">
+  <button className="data-[state=active]:bg-[var(--segmented-control-button-bg)] data-[state=active]:shadow-[var(--segmented-control-button-shadow)]">
+    Active segment
+  </button>
+</div>
+```
+
+## CSS Styling
+For custom CSS, always use CSS variables:
+```css
+/* ✅ Correct - CSS variables */
+.custom-element {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  border-color: var(--border-default);
+}
+
+/* For gradients and complex styling */
+.custom-gradient {
+  background: var(--button-default-bg); /* Already includes gradients */
+}
+
+/* ❌ Incorrect - hardcoded values */
+.custom-element {
+  color: #ffffff;
+  background-color: #353535;
+}
+```
+
+## Text Styling
+Use typography classes from [globals.css](/src/app/globals.css):
+
+### Primary Text Classes
+- `title-text-bold` - For main headings and titles
+- `body-text` - For standard text content
+- `body-text` - For smaller supporting text
+- Use `body-text-bold` for emphasis when needed, do not add `font-medium` or `font-semibold`.
+
+### Examples
+```tsx
+/* ✅ Correct typography usage */
+<h2 className="title-text-bold text-[var(--text-primary)]">Section Title</h2>
+<p className="body-text text-[var(--text-secondary)]">Regular content</p>
+<span className="body-text text-[var(--text-secondary)]">Helper text</span>
+
+/* ❌ Avoid inline styles */
+<p style={{fontSize: '0.72rem', lineHeight: '16px'}}>Text content</p>
+```
+
+## Theme Compatibility
+- **Automatic Switching**: All CSS variables automatically adapt to light/dark themes
+- **No Manual Theme Handling**: Never write separate light/dark styles - the theme system handles this
+- **Test Both Modes**: Always verify components look correct in both light and dark themes
+
+## Migration from Legacy Styles
+When updating existing components:
+1. Replace hardcoded colors with CSS variables
+2. Remove custom light/dark theme logic (themes.css handles this)
+3. Use semantic color variables when appropriate
+4. Test in both light and dark modes

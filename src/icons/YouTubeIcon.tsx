@@ -1,0 +1,42 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const YouTubeIcon = React.forwardRef<HTMLDivElement, BaseIconProps>(
+  ({size = 16, ...props}, ref) => {
+    return (
+      <BaseIcon {...props} size={size} ref={ref}>
+        <svg
+          data-wf-icon="YouTubeIcon"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M14.3 4.03437C14.5978 4.4163 14.7908 4.8693 14.86 5.34863C14.947 6.06088 14.9938 6.77747 15 7.49499V8.49818C14.9941 9.2183 14.9473 9.93749 14.86 10.6523C14.7908 11.1316 14.5978 11.5846 14.3 11.9666C13.9208 12.3233 13.4206 12.5234 12.9 12.5265C10.94 12.6665 8 12.6665 8 12.6665C8 12.6665 4.36 12.6665 3.25556 12.5343C2.68685 12.5313 2.1369 12.3306 1.7 11.9666C1.40095 11.5824 1.20786 11.1266 1.14 10.6445C1.05291 9.9323 1.00617 9.2157 1 8.49818V7.49499C1.00588 6.77488 1.05262 6.05567 1.14 5.34085C1.20916 4.86152 1.40219 4.40853 1.7 4.0266C2.07919 3.66985 2.57935 3.46982 3.1 3.46668C5.06 3.33447 8 3.33447 8 3.33447C8 3.33447 10.94 3.33447 12.9 3.47445C13.4206 3.47759 13.9208 3.67763 14.3 4.03437ZM11.1113 8.00114L6.4446 5.66781V10.3345L11.1113 8.00114Z"
+            fill="currentColor"
+          />
+        </svg>
+      </BaseIcon>
+    );
+  }
+) as IconComponent;
+
+YouTubeIcon.category = 'Social';
+
+
+YouTubeIcon.displayName = 'YouTubeIcon';
+

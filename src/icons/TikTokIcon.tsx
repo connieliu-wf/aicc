@@ -1,0 +1,40 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const TikTokIcon = React.forwardRef<HTMLDivElement, BaseIconProps>(
+  ({size = 16, ...props}, ref) => {
+    return (
+      <BaseIcon {...props} size={size} ref={ref}>
+        <svg
+          data-wf-icon="TikTokIcon"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.95878 6.21368V8.61994C6.66049 8.54009 6.34837 8.52919 6.04539 8.58806C5.74241 8.64693 5.45632 8.77406 5.20818 8.96009C4.96004 9.14612 4.75618 9.3863 4.61162 9.66294C4.46706 9.93958 4.38549 10.2456 4.37294 10.5585C4.35596 10.8279 4.39598 11.0979 4.49031 11.3503C4.58464 11.6027 4.73109 11.8316 4.91983 12.0219C5.10856 12.212 5.3352 12.359 5.58452 12.4528C5.83384 12.5468 6.10007 12.5854 6.36532 12.5662C7.83752 12.5662 8.35771 11.5162 8.35771 10.5314V1H10.7013C11.1 3.51694 12.3391 4.101 14 4.37094V6.78244C14 6.78244 12.0296 6.64024 10.7677 5.67426V10.4382C10.7664 12.5938 9.50754 15 6.38299 15C3.4834 15 2 12.5062 2 10.4159C2.01849 9.79655 2.1661 9.18822 2.4331 8.63103C2.7001 8.07384 3.08043 7.58044 3.549 7.18337C4.01756 6.78629 4.56372 6.49456 5.15147 6.32742C5.73922 6.16027 6.35519 6.12151 6.95878 6.21368Z"
+            fill="currentColor"
+          />
+        </svg>
+      </BaseIcon>
+    );
+  }
+) as IconComponent;
+
+TikTokIcon.category = 'Social';
+
+
+TikTokIcon.displayName = 'TikTokIcon';
+

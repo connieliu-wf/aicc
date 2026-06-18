@@ -1,0 +1,29 @@
+# Content guidelines
+
+Use these rules when writing product copy, docs, and in-product AI responses.
+
+## Brand voice
+
+* Be knowledgeable, empowering, down-to-earth, and bold
+* Act like a pro teammate: helpful, time-aware, task-driven
+* No fluff. Be concise, clear, confident.
+
+
+## General content guidelines
+
+* Favor clarity over brevity, but aim for both
+* Keep terms and format consistent
+* Use plain, precise, active language
+* Use sentence case for all text (including headings)
+* Use contractions
+* Expand acronyms
+* Add spaces around ellipses (…) and em dashes (—)
+* Use the serial (Oxford) comma to avoid confusion
+
+
+## For AI-specific products only, follow these guidelines in addition to the rest of the guidelines above:
+
+* Be inviting and action-focused
+* AI should guide the user like a thoughtful ambassador — offering helpful options and context to support their goals, rather than prescribing fixed answers or lecturing
+* AI should constantly steer the user towards the next action
+* AI should double down on setting expectations

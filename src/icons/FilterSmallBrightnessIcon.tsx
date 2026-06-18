@@ -1,0 +1,43 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const FilterSmallBrightnessIcon = React.forwardRef<
+  HTMLDivElement,
+  BaseIconProps
+>(({size = 16, ...props}, ref) => {
+  return (
+    <BaseIcon {...props} size={size} ref={ref}>
+      <svg
+        data-wf-icon="FilterSmallBrightnessIcon"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M5.55463 6.26173C5.74922 5.98847 5.98847 5.74922 6.26173 5.55463C6.6232 5.29722 7.04417 5.11795 7.5 5.04148C7.6626 5.0142 7.82964 5 8 5C8.17036 5 8.3374 5.0142 8.5 5.04148C8.95583 5.11795 9.3768 5.29722 9.73827 5.55463C10.0115 5.74922 10.2508 5.98847 10.4454 6.26173C10.7028 6.6232 10.882 7.04417 10.9585 7.5C10.9858 7.6626 11 7.82964 11 8C11 8.17036 10.9858 8.3374 10.9585 8.5C10.882 8.95583 10.7028 9.3768 10.4454 9.73827C10.2508 10.0115 10.0115 10.2508 9.73827 10.4454C9.3768 10.7028 8.95583 10.882 8.5 10.9585C8.3374 10.9858 8.17036 11 8 11C7.82964 11 7.6626 10.9858 7.5 10.9585C7.04417 10.882 6.6232 10.7028 6.26173 10.4454C5.98847 10.2508 5.74922 10.0115 5.55463 9.73827C5.29722 9.3768 5.11795 8.95583 5.04148 8.5C5.0142 8.3374 5 8.17036 5 8C5 7.82964 5.0142 7.6626 5.04148 7.5C5.11795 7.04417 5.29722 6.6232 5.55463 6.26173ZM5.54718 4.84007L3.75736 3.05025L3.05025 3.75736L4.84007 5.54718C4.40999 6.10044 4.12202 6.76965 4.03095 7.5H1.5V8.5H4.03095C4.12202 9.23035 4.40999 9.89956 4.84007 10.4528L3.05025 12.2426L3.75736 12.9497L5.54718 11.1599C6.10044 11.59 6.76965 11.878 7.5 11.9691V14.5H8.5V11.9691C9.23035 11.878 9.89956 11.59 10.4528 11.1599L12.2426 12.9497L12.9497 12.2426L11.1599 10.4528C11.59 9.89956 11.878 9.23035 11.9691 8.5H14.5L14.5 7.5H11.9691C11.878 6.76965 11.59 6.10044 11.1599 5.54718L12.9497 3.75736L12.2426 3.05025L10.4528 4.84007C9.89956 4.40999 9.23035 4.12202 8.5 4.03095V1.5H7.5V4.03095C6.76965 4.12202 6.10044 4.40999 5.54718 4.84007Z"
+          fill="currentColor"
+        />
+      </svg>
+    </BaseIcon>
+  );
+}) as IconComponent;
+
+FilterSmallBrightnessIcon.category = 'Style Panel';
+
+
+FilterSmallBrightnessIcon.displayName = 'FilterSmallBrightnessIcon';
+

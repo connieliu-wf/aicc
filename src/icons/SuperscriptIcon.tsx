@@ -1,0 +1,42 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const SuperscriptIcon = React.forwardRef<HTMLDivElement, BaseIconProps>(
+  ({size = 16, ...props}, ref) => {
+    return (
+      <BaseIcon {...props} size={size} ref={ref}>
+        <svg
+          data-wf-icon="SuperscriptIcon"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M10.7227 8.01611H14.5249V7.20361H11.9922L13.103 6.2832C13.285 6.11816 13.45 5.96159 13.5981 5.81348C13.7505 5.66113 13.8817 5.51091 13.9917 5.36279C14.0975 5.21891 14.1779 5.07292 14.2329 4.9248C14.2922 4.77246 14.3218 4.61165 14.3218 4.44238C14.3218 4.20964 14.2795 4.00228 14.1948 3.82031C14.1102 3.63411 13.9896 3.47542 13.833 3.34424C13.6764 3.21305 13.486 3.11361 13.2617 3.0459C13.0374 2.97396 12.7856 2.93799 12.5063 2.93799C12.2144 2.93799 11.9499 2.98242 11.7129 3.07129C11.4801 3.15592 11.2812 3.2723 11.1162 3.42041C10.9512 3.57275 10.8242 3.75049 10.7354 3.95361C10.6465 4.15674 10.6021 4.37256 10.6021 4.60107H11.605C11.605 4.47835 11.624 4.36621 11.6621 4.26465C11.7002 4.15885 11.7573 4.06999 11.8335 3.99805C11.9097 3.92188 12.0049 3.86263 12.1191 3.82031C12.2376 3.77799 12.3752 3.75684 12.5317 3.75684C12.6545 3.75684 12.7645 3.77376 12.8618 3.80762C12.9634 3.84147 13.048 3.89014 13.1157 3.95361C13.1834 4.01709 13.2342 4.09115 13.2681 4.17578C13.3019 4.26042 13.3188 4.35352 13.3188 4.45508C13.3188 4.54395 13.2977 4.63916 13.2554 4.74072C13.2173 4.83805 13.1538 4.94596 13.0649 5.06445C13.0057 5.14486 12.9316 5.23161 12.8428 5.32471C12.7581 5.41357 12.6608 5.50879 12.5508 5.61035L10.7227 7.33057V8.01611ZM7.89844 4.46875L6.05859 7.81445L4.24219 4.46875H2.9707L5.44922 8.69922L2.90625 13H4.18945L6.08203 9.58984L7.96875 13H9.23438L6.69727 8.69922L9.17578 4.46875H7.89844Z"
+            fill="currentColor"
+          />
+        </svg>
+      </BaseIcon>
+    );
+  }
+) as IconComponent;
+
+SuperscriptIcon.category = 'General Icons';
+
+
+SuperscriptIcon.displayName = 'SuperscriptIcon';
+

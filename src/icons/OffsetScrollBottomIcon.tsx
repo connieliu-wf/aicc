@@ -1,0 +1,49 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const OffsetScrollBottomIcon = React.forwardRef<
+  HTMLDivElement,
+  BaseIconProps
+>(({size = 16, ...props}, ref) => {
+  return (
+    <BaseIcon {...props} size={size} ref={ref}>
+      <svg
+        data-wf-icon="OffsetScrollBottomIcon"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.4001 5.6002H6.40015L8.40015 8.8002L10.4001 5.6002ZM8.00015 3.2002H8.80015V5.6002H8.00015V3.2002Z"
+          fill="currentColor"
+        />
+        <path
+          d="M1.6001 0.799805V14.3998H15.2001V0.799805H1.6001ZM14.4001 13.5998H2.4001V1.5998H14.4001V13.5998Z"
+          fill="currentColor"
+        />
+        <path
+          d="M4.8002 10.3994H5.6002V11.1994H4.8002V10.3994ZM3.2002 10.3994H4.0002V11.1994H3.2002V10.3994ZM6.4002 10.3994H7.2002V11.1994H6.4002V10.3994ZM8.0002 10.3994H8.8002V11.1994H8.0002V10.3994ZM9.6002 10.3994H10.4002V11.1994H9.6002V10.3994ZM11.2002 10.3994H12.0002V11.1994H11.2002V10.3994ZM12.8002 10.3994H13.6002V11.1994H12.8002V10.3994ZM5.6002 11.1994H6.4002V11.9994H5.6002V11.1994ZM7.2002 11.1994H8.0002V11.9994H7.2002V11.1994ZM8.8002 11.1994H9.6002V11.9994H8.8002V11.1994ZM10.4002 11.1994H11.2002V11.9994H10.4002V11.1994ZM12.0002 11.1994H12.8002V11.9994H12.0002V11.1994ZM4.8002 11.9994H5.6002V12.7994H4.8002V11.9994ZM4.0002 11.1994H4.8002V11.9994H4.0002V11.1994ZM3.2002 11.9994H4.0002V12.7994H3.2002V11.9994ZM6.4002 11.9994H7.2002V12.7994H6.4002V11.9994ZM8.0002 11.9994H8.8002V12.7994H8.0002V11.9994ZM9.6002 11.9994H10.4002V12.7994H9.6002V11.9994ZM11.2002 11.9994H12.0002V12.7994H11.2002V11.9994ZM12.8002 11.9994H13.6002V12.7994H12.8002V11.9994Z"
+          fill="currentColor"
+        />
+      </svg>
+    </BaseIcon>
+  );
+}) as IconComponent;
+
+OffsetScrollBottomIcon.category = 'Layout';
+
+
+OffsetScrollBottomIcon.displayName = 'OffsetScrollBottomIcon';
+

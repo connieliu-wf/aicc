@@ -1,0 +1,50 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const FieldItemref24Icon = React.forwardRef<
+  HTMLDivElement,
+  BaseIconProps
+>(({size = 24, ...props}, ref) => {
+  return (
+    <BaseIcon {...props} size={size} ref={ref}>
+      <svg
+        data-wf-icon="FieldItemref24Icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.5"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M9.61954 3.22436C11.1503 2.45897 13.2301 2 15.5 2C17.7699 2 19.8497 2.45897 21.3805 3.22436C22.8813 3.97479 24 5.10402 24 6.5V12.5V18.5C24 19.896 22.8813 21.0252 21.3805 21.7756C19.8497 22.541 17.7699 23 15.5 23C13.2301 23 11.1503 22.541 9.61954 21.7756C8.11867 21.0252 7 19.896 7 18.5V12.5V6.5C7 5.10402 8.11867 3.97479 9.61954 3.22436ZM8 14.6526V18.5C8 19.3132 8.67219 20.1839 10.0668 20.8812C11.4314 21.5635 13.3517 22 15.5 22C17.6483 22 19.5686 21.5635 20.9332 20.8812C22.3278 20.1839 23 19.3132 23 18.5V14.6526C22.5613 15.0869 22.0038 15.464 21.3805 15.7756C19.8497 16.541 17.7699 17 15.5 17C13.2301 17 11.1503 16.541 9.61954 15.7756C8.99617 15.464 8.43874 15.0869 8 14.6526ZM23 12.5C23 13.3132 22.3278 14.1839 20.9332 14.8812C19.5686 15.5635 17.6483 16 15.5 16C13.3517 16 11.4314 15.5635 10.0668 14.8812C8.67219 14.1839 8 13.3132 8 12.5V8.65259C8.43874 9.08693 8.99617 9.46396 9.61954 9.77564C11.1503 10.541 13.2301 11 15.5 11C17.7699 11 19.8497 10.541 21.3805 9.77564C22.0038 9.46396 22.5613 9.08693 23 8.65259V12.5ZM20.9332 4.11879C22.3278 4.81607 23 5.68684 23 6.5C23 7.31316 22.3278 8.18393 20.9332 8.88121C19.5686 9.56354 17.6483 10 15.5 10C13.3517 10 11.4314 9.56354 10.0668 8.88121C8.67219 8.18393 8 7.31316 8 6.5C8 5.68684 8.67219 4.81607 10.0668 4.11879C11.4314 3.43646 13.3517 3 15.5 3C17.6483 3 19.5686 3.43646 20.9332 4.11879Z"
+          fill="currentColor"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M4 12H0V13H4V12ZM15.5 16C13.3517 16 11.4314 15.5635 10.0668 14.8812C8.67219 14.1839 8 13.3132 8 12.5H7C7 13.896 8.11867 15.0252 9.61954 15.7756C11.1503 16.541 13.2301 17 15.5 17C17.7699 17 19.8497 16.541 21.3805 15.7756C22.8813 15.0252 24 13.896 24 12.5H23C23 13.3132 22.3278 14.1839 20.9332 14.8812C19.5686 15.5635 17.6483 16 15.5 16Z"
+          fill="currentColor"
+        />
+      </svg>
+    </BaseIcon>
+  );
+}) as IconComponent;
+
+FieldItemref24Icon.category = '24x24 (Field illustrations)';
+
+
+FieldItemref24Icon.displayName = 'FieldItemref24Icon';
+

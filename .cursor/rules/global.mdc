@@ -1,0 +1,31 @@
+---
+alwaysApply: true
+---
+This is a **prototype repository** for demonstrating Webflow UI designs. Prioritize speed and visual fidelity over production-ready code.
+
+## Core Principles
+
+- **Prioritize visual polish**: Focus on accurate UI representation. Interactions should feel realistic but don't need full functionality.
+- **Simulate, don't build**: This is a mockup, not a production app. All functionality should be simulated for prototyping a user experience.
+- **Mock data is expected**: Use hardcoded arrays, placeholder content, and static data. No need for API calls, databases, or data fetching.
+- **Speed over perfection**: Skip comprehensive error handling, edge cases, and defensive programming unless they're needed for the demo.
+- **KISS**: Avoid over-engineering. Use the most straightforward and simple approach to achieve the desired outcome.
+- **YAGNI**: Only implement what is necessary for the prototype.
+- **DRY**: Avoid duplicate code. Reuse components and utilities wherever possible.
+
+## Things NOT to do
+
+- Do NOT add production error handling (try/catch, error boundaries)
+- Do NOT add form validation beyond basic UI feedback
+- Do NOT add accessibility markup (ARIA roles, labels, etc.)
+- Do NOT add authentication or authorization logic
+- Do NOT add data persistence beyond component state
+- Do NOT add performance optimizations (memoization, code splitting, etc.)
+- Do NOT add comprehensive TypeScript strictness (basic types are fine)
+
+
+## Code Style
+
+- Prefer inline mock data over separate data files
+- Use descriptive variable names for mock data (e.g., `mockSites`, `mockTeamMembers`)
+- Keep components focused on rendering; business logic can be simplified or omitted

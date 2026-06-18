@@ -1,0 +1,40 @@
+/* eslint-disable react/jsx-sort-props */
+
+/**
+ * DO NOT MODIFY THIS ICON DIRECTLY.
+ *
+ * THIS ICON WAS AUTOMATICALLY GENERATED.
+ * SVG RETRIEVED FROM SPRING FOUNDATIONS FIGMA FILE.
+ * @see https://www.figma.com/design/kcg95u086DD7Sa9or8Bwpq/%F0%9F%8C%B1--Foundations---Spring-2.0?node-id=24-2&p=f&t=75lUXy0FPOr0htKP-0
+ */
+import React from 'react';
+import {Icon as BaseIcon, type BaseIconProps} from './Icon/Icon';
+import {IconComponent} from './types';
+
+export const HelpIcon = React.forwardRef<HTMLDivElement, BaseIconProps>(
+  ({size = 24, ...props}, ref) => {
+    return (
+      <BaseIcon {...props} size={size} ref={ref}>
+        <svg
+          data-wf-icon="HelpIcon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.25 19.497H15.759C15.5601 19.497 15.3693 19.576 15.2287 19.7167C15.088 19.8573 15.009 20.0481 15.009 20.247V21.747C15.009 21.9459 15.088 22.1367 15.2287 22.2773C15.3693 22.418 15.5601 22.497 15.759 22.497H17.2485C17.4474 22.497 17.6382 22.418 17.7788 22.2773C17.9195 22.1367 17.9985 21.9459 17.9985 21.747V20.247C17.9985 20.0481 17.9195 19.8573 17.7788 19.7167C17.6382 19.576 17.4474 19.497 17.2485 19.497H17.25ZM16.467 7.494C15.4007 7.49419 14.3689 7.87124 13.5537 8.55853C12.7385 9.24582 12.1924 10.1991 12.012 11.25C11.946 11.6625 12.1395 12 12.702 12H14.2095C14.8215 12 14.9625 11.46 14.9625 11.25C14.9625 11.1513 14.982 11.0535 15.0199 10.9623C15.0578 10.8711 15.1133 10.7883 15.1832 10.7186C15.2532 10.6489 15.3362 10.5937 15.4276 10.5562C15.5189 10.5187 15.6168 10.4996 15.7155 10.5H17.2215C17.6415 10.5 18.0015 10.836 18.0015 11.25V12.7545C18.0015 13.1685 17.6415 13.5 17.2215 13.5H16.0965C15.1575 13.5 15.0075 14.175 15.0075 15.0075V17.2605C15.0075 17.676 15.3075 18 15.7245 18H17.232C17.649 18 18.012 17.676 18.012 17.2605V16.251C19.512 15.6315 21.012 13.9605 21.012 12.0015C21.0041 10.8045 20.5227 9.65929 19.673 8.8161C18.8234 7.97291 17.6745 7.50028 16.4775 7.5015L16.467 7.494ZM1.5 0V11.5305L4.725 8.9355L6.9945 13.5L8.94 12.489L6.7245 8.04L10.5 7.2675L1.5 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </BaseIcon>
+    );
+  }
+) as IconComponent;
+
+HelpIcon.category = 'Cursors';
+
+
+HelpIcon.displayName = 'HelpIcon';
+
