@@ -9,9 +9,11 @@ import CanvasBar from "@/components/designer/layout/CanvasBar";
 import CanvasViewport from "@/components/designer/layout/CanvasViewport";
 import CMSSection from "@/components/designer/sections/CMSSection";
 import InsightsSection from "@/components/designer/sections/InsightsSection";
+import ComponentEditorView from "@/components/designer/sections/ComponentEditor/ComponentEditorView";
 import { NavigatorProvider } from "@/context/NavigatorContext";
 import { PagesProvider } from "@/context/PagesContext";
 import { CanvasSelectionProvider } from "@/context/CanvasSelectionContext";
+import { ComponentEditorProvider, useComponentEditor } from "@/context/ComponentEditorContext";
 import { useApp } from "@/context/AppContext";
 
 interface LayoutContentProps {
@@ -21,6 +23,7 @@ interface LayoutContentProps {
 function LayoutContentInner({ children }: LayoutContentProps) {
   const pathname = usePathname();
   const { currentSection, isStyleGuideOpen } = useApp();
+  const { activeComponent } = useComponentEditor();
   
   // Check if we're on the dashboard route
   if (pathname?.startsWith('/dashboard')) {
@@ -58,15 +61,21 @@ function LayoutContentInner({ children }: LayoutContentProps) {
         {currentSection === 'home' && (
           <>
             <LeftSidebar />
-            <div className="flex-1 flex flex-col bg-[var(--bg-secondary)]">
-              <CanvasBar />
-              <main className="flex-1 relative">
-                <CanvasViewport>
-                  <Canvas />
-                </CanvasViewport>
-              </main>
-            </div>
-            <RightPanel />
+            {activeComponent ? (
+              <ComponentEditorView />
+            ) : (
+              <>
+                <div className="flex-1 flex flex-col bg-[var(--bg-secondary)]">
+                  <CanvasBar />
+                  <main className="flex-1 relative">
+                    <CanvasViewport>
+                      <Canvas />
+                    </CanvasViewport>
+                  </main>
+                </div>
+                <RightPanel />
+              </>
+            )}
           </>
         )}
         
@@ -91,7 +100,9 @@ export function LayoutContent(props: LayoutContentProps) {
     <NavigatorProvider>
       <PagesProvider>
         <CanvasSelectionProvider>
-          <LayoutContentInner {...props} />
+          <ComponentEditorProvider>
+            <LayoutContentInner {...props} />
+          </ComponentEditorProvider>
         </CanvasSelectionProvider>
       </PagesProvider>
     </NavigatorProvider>

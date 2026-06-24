@@ -30,6 +30,7 @@ import NavigatorPanel from './panels/leftpanel/NavigatorPanel';
 import AuditsPanel from './panels/leftpanel/AuditsPanel';
 import VariablesPanel from './panels/leftpanel/VariablesPanel';
 import AssetsPanel from './panels/leftpanel/AssetsPanel';
+import ComponentsPanel from './panels/leftpanel/ComponentsPanel';
 
 const LeftSidebar = () => {
   const { toggleNavigator } = useNavigator();
@@ -240,7 +241,9 @@ const LeftSidebar = () => {
         <NavigatorPanel />
       </Panel>
       
-      <Panel title="Components" isOpen={activePanel === 'components'} onClose={closePanel} />
+      <Panel title="Components" isOpen={activePanel === 'components'} onClose={closePanel}>
+        <ComponentsPanel />
+      </Panel>
       <Panel 
         title="Variables" 
         isOpen={activePanel === 'variables'} 
